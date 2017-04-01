@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
+  .node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+  }
+
+  .node .selected {
+    stroke: black;
+  }
+
+  .link {
+    stroke: #999;
+  }
+
+  .brush .extent {
+    fill-opacity: .1;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+  }
 
 	body, html {
  		height: 100%;
@@ -119,8 +138,7 @@
 </head>
 
 <body>
-
-	<div class="bgimg-1">
+  <div class="bgimg-1">
   		<div class="caption">
     		<span class="border">SCROLL DOWN</span>
   		</div>
@@ -156,6 +174,7 @@
 	<div style="position:relative;">
   		<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
     		<p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+         <div align='center' id="d3_selectable_force_directed_graph"></div>
   		</div>
 	</div>
 	<div class="bgimg-3">
@@ -175,4 +194,8 @@
 	</div>
 
 </body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="plot.js"></script>
+<script>selectableForceDirectedGraph();</script>
+
 </html>
