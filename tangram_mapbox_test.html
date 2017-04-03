@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tangram + Mapbox Test</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <style>
+      html, body { margin: 0; padding: 0; }
+      #map { height: 100%; width: 100%; position: absolute; }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="https://mapzen.com/tangram/tangram.min.js"></script>
+    <script>
+
+      var map = L.map('map');
+
+
+      var layer = Tangram.leafletLayer({
+        scene: 'https://mapzen.com/api/scenes/47897/446/resources/basic.yaml',
+        attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | &copy; OSM contributors'
+      });
+
+      var overlay = L.tileLayer('https://api.mapbox.com/styles/v1/jtvandyk/cj12iw5qi004f2sqb8ngx46c4/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoianR2YW5keWsiLCJhIjoiR25GNTN2YyJ9.U90ZHuucvQ3i3RhCCzE2NA');
+
+      layer.addTo(map);
+      overlay.addTo(map);
+      
+      map.setView([38.8992, -77.0452], 14.5942);
+    </script>
+  </body>
+</html>
