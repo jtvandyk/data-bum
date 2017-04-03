@@ -134,16 +134,30 @@
 		height: 200px;
 	}
 
+  .fa-chevron-down {
+    float: right;
+    line-height: 50px;
+    font-size: 50px;
+    color: #000;
+    opacity: 75%;
+  }
+
 	</style>
 </head>
 
 <body>
   <div class="bgimg-1">
+    <a href = "#next" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a>
   		<div class="caption">
     		<span class="border">SCROLL DOWN</span>
   		</div>
 	</div>
-	<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+	<div id = "next" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <a href = "#next1" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a>  
   		<h3 style="text-align:center;">Parallax Demo</h3>
   		<p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
   		<ul class="flex-container">
@@ -166,28 +180,45 @@
 		
 
 	</div>
-	<div class="bgimg-2">
+	<div id = "next1" class="bgimg-2">
+    <a href = "#next2" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a>  
+
   		<div class="caption">
    			<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
   		</div>
 	</div>
-	<div style="position:relative;">
+
+	<div id = "next2" style="position:relative;">
+      <a href = "#next3" class = "smoothScroll">
+        <i class="fa fa-chevron-down fa-fw"></i>
+      </a> 
   		<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
     		<p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
          <div align='center' id="d3_selectable_force_directed_graph"></div>
   		</div>
 	</div>
-	<div class="bgimg-3">
+
+	<div id = "next3" class="bgimg-3">
+    <a href = "#next4" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
   		<div class="caption">
     		<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
   		</div>
 	</div>
-	<div style="position:relative;">
+
+	<div id = "next4" style="position:relative;">
+    <a href = "#next5" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
   		<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
     		<p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
   		</div>
 	</div>
-	<div class="bgimg-1">
+
+	<div id = "next5" class="bgimg-1">
  		<div class="caption">
     		<span class="border">COOL!</span>
   		</div>
@@ -197,5 +228,6 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="plot.js"></script>
 <script>selectableForceDirectedGraph();</script>
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/smoothscroll.js"></script>
 </html>

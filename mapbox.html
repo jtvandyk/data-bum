@@ -62,25 +62,22 @@
 
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoianR2YW5keWsiLCJhIjoiR25GNTN2YyJ9.U90ZHuucvQ3i3RhCCzE2NA';
-
-//new syntax for defining mapbox.gl baselayer
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/dark-v9',
+    style: 'mapbox://styles/mapbox/streets-v9',
     zoom: 15,
     center: [-71.97722138410576, -13.517379300798098]
 });
 
-//defining map layers from mapbox
 map.on('load', function () {
-    map.addSource('museums', {
+    map.addSource('pokemon', {
         type: 'vector',
-        url: 'mapbox://mapbox.2opop9hr'
+        url: 'jtvandyk.cislgcvod08ha2zoc3z6v1c8s-0cfrt'
     });
     map.addLayer({
-        'id': 'museums',
+        'id': 'pokemon',
         'type': 'circle',
-        'source': 'museums',
+        'source': 'pokemon',
         'layout': {
             'visibility': 'visible'
         },
@@ -88,7 +85,7 @@ map.on('load', function () {
             'circle-radius': 8,
             'circle-color': 'rgba(55,148,179,1)'
         },
-        'source-layer': 'museum-cusco'
+        'source-layer': 'pokemon'
     });
 
     map.addSource('contours', {
@@ -112,8 +109,7 @@ map.on('load', function () {
     });
 });
 
-//defining buttons per map layer
-var toggleableLayerIds = [ 'contours', 'museums'];
+var toggleableLayerIds = [ 'contours', 'pokemon' ];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
