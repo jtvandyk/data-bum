@@ -1,0 +1,154 @@
+.node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+  }
+
+  .node .selected {
+    stroke: black;
+  }
+
+  .link {
+    stroke: #999;
+  }
+
+  .brush .extent {
+    fill-opacity: .1;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+  }
+
+	body, html {
+ 		height: 100%;
+  		margin: 0;
+  		font: 400 15px/1.8 "Raleway", sans-serif;
+  		color: #777;
+	}
+
+	.bgimg-1, .bgimg-2, .bgimg-3 {
+  		position: relative;
+ 		opacity: 0.65;
+  		background-attachment: fixed;
+  		background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+
+	}
+
+	.bgimg-1 {
+  		background-image: url("http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/03/09/103455746-GettyImages-512791400.600x400.jpg");
+  		min-height: 100%;
+	}
+
+	.bgimg-2 {
+  		background-image: url("image/jvd.jpg");
+  		min-height: 400px;
+	}
+
+	.bgimg-3 {
+  		background-image: url("http://www.adweek.com/files/2015_May/iStock-Unfinished-Business-5.jpg");
+  		min-height: 400px;
+	}
+
+  .question {
+    color: #ddd;
+    background-color: #282E34;
+    text-align: center;
+    padding: 50px 80px;
+  }
+
+  .info {
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+
+  }
+
+	.caption {
+  		position: absolute;
+  		left: 0;
+  		top: 50%;
+  		width: 100%;
+  		text-align: center;
+  		color: #000;
+	}
+
+	.caption span.border {
+  		background-color: #111;
+  		color: #fff;
+  		padding: 18px;
+  		font-size: 25px;
+  		letter-spacing: 10px;
+	}
+	
+	h3 {
+  		letter-spacing: 5px;
+  		text-transform: uppercase;
+  		font: 20px "Lato", sans-serif;
+  		color: #111;
+	}
+
+	/* Turn off parallax scrolling for tablets and phones */
+	@media only screen and (max-device-width: 1024px) {
+    	.bgimg-1, .bgimg-2, .bgimg-3 {
+        	background-attachment: scroll;
+    	}
+	}
+	
+	@import "compass/css3";
+
+	.flex-container {
+  		padding: 0;
+  		margin: 0;
+  		list-style: none;
+  
+ 		display: -webkit-box;
+  		display: -moz-box;
+ 		display: -ms-flexbox;
+  		display: -webkit-flex;
+  		display: flex;
+  
+  		-webkit-flex-flow: row wrap;
+  		justify-content: space-around;
+	}
+
+	.flex-item {
+  		background: tomato;
+  		padding: 5px;
+  		width: 200px;
+  		height: 200px;
+  		margin-top: 10px;
+  
+  		line-height: 200px;
+  		color: white;
+  		font-weight: bold;
+  		font-size: 3em;
+  		text-align: center;
+	}
+
+	.flex-viz {
+		background: tomato;
+  		padding: 5px;
+  		width: 400px;
+  		height: 400px;
+  		margin-top: 10px;
+  
+  		line-height: 400px;
+  		color: white;
+  		font-weight: bold;
+  		font-size: 3em;
+  		text-align: center;
+	}
+
+	img{
+		width: 200px;
+		height: 200px;
+	}
+
+  .fa-chevron-down {
+    float: right;
+    line-height: 50px;
+    font-size: 50px;
+    color: #000;
+    opacity: 75%;
+  }
