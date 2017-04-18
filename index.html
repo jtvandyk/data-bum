@@ -3,8 +3,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
 	<style>
-  
+
 	</style>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v1.3.0/turf.min.js'></script>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js'></script> 
+  <script src='javascript/dc_places.js'></script>
 </head>
 
 <body>
@@ -12,9 +15,12 @@
     <a href = "#next" class = "smoothScroll">
       <i class="fa fa-chevron-down fa-fw"></i>
     </a>
+    
   		<div class="caption">
-    	  <span class="border">SCROLL DOWN</span>
-      </div>
+    	  <span class="border">Lunch and Learn</span>
+        <span class="border">April 25, 2017</span>
+
+    </div>
   </div>
 
   <div id = "next" style="position:relative;">
@@ -37,7 +43,7 @@
         <i class="fa fa-chevron-down fa-fw"></i>
       </a> 
       <div class="question">
-        <p>Who am I?</p>
+        <p class="q">Who am I?</p>
       </div>
   </div>
 
@@ -45,74 +51,361 @@
     <a href = "#next3" class = "smoothScroll">
       <i class="fa fa-chevron-down fa-fw"></i>
     </a>  
-
       <div class="caption">
-        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Justin.</span>
+        <span class="border">Justin</span>
       </div>
   </div>
 
 
-  <div id = "next2">
-    <a href = "#next3" class = "smoothScroll">
+  <div id = "next3">
+    <a href = "#next4" class = "smoothScroll">
       <i class="fa fa-chevron-down fa-fw"></i>
 	  </a> 
     <div class = "info">
-  		<h3 style="text-align:center;">Parallax Demo</h3>
-  		<p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
-  		<ul class="flex-container">
-  			<li class="flex-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png"></li>
-  			<li class="flex-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png"></li>
- 			 <li class="flex-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png"></li>
-  			<li class="flex-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png"></li>
-  			<li class="flex-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png"></li>
-  			<li class="flex-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png"></li>
+  		<h3 style="text-align:center;">Magnet for Aliases</h3>
+		  <ul class="flex-container">
+  			<li class="flex-viz"><img src="https://s3.amazonaws.com/bah-lunch-learn-images/names.png"></li>
 		  </ul>
-		<ul class="flex-container">
-  			<li class="flex-viz"></li>
-  			<li class="flex-viz"></li>
-        <li class="flex-viz"></li>
-        <li class="flex-viz"></li>
-		</ul>
 		</div>
 	</div>
 
-
-
-	<div id = "next3" style="position:relative;">
-      <a href = "#next4" class = "smoothScroll">
+<div id = "next4" style="position:relative;">
+      <a href = "#next5" class = "smoothScroll">
         <i class="fa fa-chevron-down fa-fw"></i>
       </a> 
-  		<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
-    		<p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-         <div align='center' id="d3_selectable_force_directed_graph"></div>
-  		</div>
-	</div>
+      <div class="question">
+        <p class="q">What Have I Done?</p>
+      </div>
+  </div>
 
-	<div id = "next4" class="bgimg-3">
-    <a href = "#next5" class = "smoothScroll">
-      <i class="fa fa-chevron-down fa-fw"></i>
-    </a> 
-  		<div class="caption">
-    		<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
-  		</div>
-	</div>
-
-	<div id = "next5" style="position:relative;">
+<div id = "next5">
     <a href = "#next6" class = "smoothScroll">
       <i class="fa fa-chevron-down fa-fw"></i>
     </a> 
-  		<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
-    		<p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    <div class = "info">
+      <h3 style="text-align:center;">Mostly maps.</h3>
+      <ul class="flex-container">
+        <li class="flex-viz"><img src="https://s3.amazonaws.com/bah-lunch-learn-images/edbuild.png"></li>
+      </ul>
+    </div>
+  </div>
+
+<div id = "next6" style="position:relative;">
+      <a href = "#next7" class = "smoothScroll">
+        <i class="fa fa-chevron-down fa-fw"></i>
+      </a> 
+      <div class="question">
+        <p class="q">Where Can You Find It?</p>
+      </div>
+  </div>
+
+<div id = "next7">
+    <a href = "#next8" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">Here and there.</h3>
+      <ul class="flex-container">
+        <li class="flex-item"><img src="http://cdn.citylab.com/static/citylab/img/logos/logo_social_600x315.png"></li>
+        <li class="flex-item"><img src="http://logodatabases.com/wp-content/uploads/2012/05/the-washington-post.jpg"></li>
+       <li class="flex-item"><img src="http://markfisherfitness.com/wp-content/uploads/2016/12/Huffington-Post-Logo.png"></li>
+        <li class="flex-item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Vox_%28website%29_logo.jpg"></li>
+        <li class="flex-item"><img src="https://static1.squarespace.com/static/5637c78ae4b0e8bfe0fff16b/563bb426e4b06feeb69d9a3c/563bb42ee4b06feeb69d9aa1/1462225330588/Seattle+Times+USE+THIS+Logo_Stacked.jpg"></li>
+        <li class="flex-item"><img src="https://cdn.theatlantic.com/assets/static/b/theatlantic/img/default-thumbnail.png"></li>
+        <li class="flex-item"><img src="http://wp.production.patheos.com/blogs/unequallyyoked/files/2015/03/538.png"></li>
+        <li class="flex-item"><img src="http://fontmeme.com/images/Mashable-Logo.jpg"></li>
+        <li class="flex-item"><img src="https://pbs.twimg.com/profile_images/731988002206027776/c0HB7fbs_400x400.jpg"></li>
+        <li class="flex-item"><img src="https://www.the74million.org/images/logo.png"></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id = "next8" style="position:relative;">
+      <a href = "#next9" class = "smoothScroll">
+        <i class="fa fa-chevron-down fa-fw"></i>
+      </a> 
+      <div class="question">
+        <p class="q">Why Do We Do It?</p>
+      </div>
+  </div>
+
+  <div id = "next9">
+    <a href = "#next10" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">Sometimes to understand.</h3>
+      <ul class="flex-container">
+        <li class="flex-viz"><img src="https://s3.amazonaws.com/bah-lunch-learn-images/gg.png"></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id = "next10">
+    <a href = "#next11" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">Sometimes to communicate.</h3>
+      <ul class="flex-container">
+        <li class="flex-viz"><img src="https://s3.amazonaws.com/bah-lunch-learn-images/EXPLANATORY_droughtmovement.jpg"></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id = "next11" style="position:relative;">
+      <a href = "#next12" class = "smoothScroll">
+        <i class="fa fa-chevron-down fa-fw"></i>
+      </a> 
+      <div class="question">
+        <p class="q">How Do We Do It?</p>
+      </div>
+  </div>
+
+  <div id = "next12" class="bgimg-3">
+    <a href = "#next13" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+      <div class="caption">
+        <span class="border">By Asking Questions</span>
+      </div>
+  </div>
+
+  <div id = "next13">
+    <a href = "#next14" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">For Example</h3>
+      <p>Where is wine made in Washington State?</p>
+      <p>What grapes am I likely to find in a bottle blended together?</p>
+    </div>
+  </div>
+
+  <div id = "next14">
+    <a href = "#next15" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">What we need is driven by our question.</h3>
+      <ul class="flex-container">
+        <li class="flex-box">
+          <img src="https://s3.amazonaws.com/bah-lunch-learn-images/geo.jpg">
+          Geo
+        </li>
+        <li class="flex-box">
+          <img src="https://s3.amazonaws.com/bah-lunch-learn-images/table.png">
+        </li>
+       <li class="flex-box">
+        <div>
+          <img src="https://s3.amazonaws.com/bah-lunch-learn-images/intro.png">
+        </div>
+      </li>
+        <li class="flex-box">
+          <img src="https://s3.amazonaws.com/bah-lunch-learn-images/corpus.jpg">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<div id = "next15">
+    <a href = "#next16" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">What we get is dictated by availability.</h3>
+      <ul class="flex-container">
+        <li class="flex-item"><img src="http://cdn.citylab.com/static/citylab/img/logos/logo_social_600x315.png"></li>
+        <li class="flex-item"><img src="http://logodatabases.com/wp-content/uploads/2012/05/the-washington-post.jpg"></li>
+       <li class="flex-item"><img src="http://markfisherfitness.com/wp-content/uploads/2016/12/Huffington-Post-Logo.png"></li>
+        <li class="flex-item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Vox_%28website%29_logo.jpg"></li>
+        <li class="flex-item"><img src="https://static1.squarespace.com/static/5637c78ae4b0e8bfe0fff16b/563bb426e4b06feeb69d9a3c/563bb42ee4b06feeb69d9aa1/1462225330588/Seattle+Times+USE+THIS+Logo_Stacked.jpg"></li>
+        <li class="flex-item"><img src="https://cdn.theatlantic.com/assets/static/b/theatlantic/img/default-thumbnail.png"></li>
+        <li class="flex-item"><img src="http://wp.production.patheos.com/blogs/unequallyyoked/files/2015/03/538.png"></li>
+        <li class="flex-item"><img src="http://fontmeme.com/images/Mashable-Logo.jpg"></li>
+        <li class="flex-item"><img src="https://pbs.twimg.com/profile_images/731988002206027776/c0HB7fbs_400x400.jpg"></li>
+        <li class="flex-item"><img src="https://www.the74million.org/images/logo.png"></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id = "next16" style="position:relative;">
+      <a href = "#next17" class = "smoothScroll">
+        <i class="fa fa-chevron-down fa-fw"></i>
+      </a> 
+      <div class="question">
+        <p class="q">What Happens When It Isn't Good?</p>  
+      </div>
+  </div>
+
+  <div id = "next17">
+    <a href = "#next18" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">There's no guarantee it's usable.</h3>  
+          <img src="https://s3.amazonaws.com/bah-lunch-learn-images/excel.jpeg">
+    </div>
+  </div>
+
+
+  <div id = "next18">
+    <a href = "#next19" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">So we have to tidy up.</h3>
+          <img src="https://s3.amazonaws.com/bah-lunch-learn-images/tidy.png">
+    </div>
+  </div>
+
+  <div id = "next19" style="position:relative;">
+      <a href = "#next20" class = "smoothScroll">
+        <i class="fa fa-chevron-down fa-fw"></i>
+      </a> 
+      <div class="question">
+        <p class="q">When Do We Make Visuals?</p>   
+      </div>
+  </div>
+
+  <div id = "next20">
+    <a href = "#next21" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">While we research and when we publish.</h3>
+          <img src="https://s3.amazonaws.com/bah-lunch-learn-images/workflow.png">
+    </div>
+  </div>
+
+<div id = "next21" style="position:relative;">
+      <a href = "#next22" class = "smoothScroll">
+        <i class="fa fa-chevron-down fa-fw"></i>
+      </a> 
+      <div class="question">
+        <p class="q">Remember Our Questions?</p>   
+      </div>
+  </div>
+
+  <div id = "next22">
+    <a href = "#next23" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">Where is wine made in Washington State?</h3>
+      <img src="http://images.huffingtonpost.com/2016-10-10-1476135120-8225852-Hillary1.jpg">
+  </div>
+
+  <div id = "next23">
+    <a href = "#next24" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">What grapes am I likely to find in a bottle together?</h3>
+      <img src="http://freebeacon.com/wp-content/uploads/2015/07/Hillary-Clinton1.jpg">
+  </div>
+
+	<div id = "next24" class="bgimg-4">
+    <a href = "#next35" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a>  
+      <div class="caption">
+        <span class="border">Best Practices</span>
+      </div>
+  </div>
+
+<div id = "next25">
+    <a href = "#next26" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+      <div class = "info">
+        <h3>Don't Contribute to the Unecessary Death of Kittens.</h3>
+          <p>Above all else show the data.</p>
+          <p>Maximize the data-ink ratio.</p>
+          <p>Erase non-data ink.</p>
+          <p>Erase redundant data ink.</p>
+          <p>Revise and edit.</p>
+      </div>
+  </div>
+
+	<div id = "next26">
+      <a href = "#next27" class = "smoothScroll">
+        <i class="fa fa-chevron-down fa-fw"></i>
+      </a> 
+      <div class="question">
+        <p class="q">What's Next?</p>   
+      </div>
+  </div>
+
+	<div id = "next27" class="bgimg-5">
+    <a href = "#next28" class = "smoothScroll">
+        <i class="fa fa-chevron-down fa-fw"></i>
+      </a> 
+ 		<div class="caption">
+    		<span class="border">Tutorial</span>
   		</div>
 	</div>
 
-	<div id = "next6" class="bgimg-1">
- 		<div class="caption">
-    		<span class="border">COOL!</span>
-  		</div>
-	</div>
+  <div id = "next28">
+      <a href = "#next29" class = "smoothScroll">
+        <i class="fa fa-chevron-down fa-fw"></i>
+      </a> 
+      <div class="question">
+        <p class="q">Read to go to Work?</p>   
+      </div>
+  </div>
+
+  <div id = "next29">
+    <a href = "#next30" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+      <div class = "info">
+        <h3>Design Your Own Visualization!</h3>
+          <p>Q: What's the most important app on your phone?</p>
+          <p>Data: You're gonna need to get resourceful with what your phone provides</p>
+          <p>Materials: Postcards, Colored Pencils, and Rulers</p>
+          <p>Brief: Create a visual and legend</p>
+      </div>
+  </div>
+
+  <div id = "next31">
+    <a href = "#next32" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class = "info">
+      <h3 style="text-align:center;">Some inspiration.</h3>
+      <img src="https://s3.amazonaws.com/bah-lunch-learn-images/tutorial1.png">
+  </div>
+
+  <div id = "next32" class="bgimg-6">
+  <a href = "#next33" class = "smoothScroll">
+      <i class="fa fa-chevron-down fa-fw"></i>
+    </a> 
+    <div class="caption">
+        <span class="border">Resources</span>
+      </div>
+  </div>
+
+ <div id = "next33">
+    <div class = "info">
+      <h3 style="text-align:center;">Websites to get you started.</h3>
+      <ul class="flex-container">
+        <li class="flex-item"><img src="http://cdn.citylab.com/static/citylab/img/logos/logo_social_600x315.png"></li>
+        <li class="flex-item"><img src="http://logodatabases.com/wp-content/uploads/2012/05/the-washington-post.jpg"></li>
+       <li class="flex-item"><img src="http://markfisherfitness.com/wp-content/uploads/2016/12/Huffington-Post-Logo.png"></li>
+        <li class="flex-item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Vox_%28website%29_logo.jpg"></li>
+        <li class="flex-item"><img src="https://static1.squarespace.com/static/5637c78ae4b0e8bfe0fff16b/563bb426e4b06feeb69d9a3c/563bb42ee4b06feeb69d9aa1/1462225330588/Seattle+Times+USE+THIS+Logo_Stacked.jpg"></li>
+        <li class="flex-item"><img src="https://cdn.theatlantic.com/assets/static/b/theatlantic/img/default-thumbnail.png"></li>
+        <li class="flex-item"><img src="http://wp.production.patheos.com/blogs/unequallyyoked/files/2015/03/538.png"></li>
+        <li class="flex-item"><img src="http://fontmeme.com/images/Mashable-Logo.jpg"></li>
+        <li class="flex-item"><img src="https://pbs.twimg.com/profile_images/731988002206027776/c0HB7fbs_400x400.jpg"></li>
+        <li class="flex-item"><img src="https://www.the74million.org/images/logo.png"></li>
+      </ul>
+    </div>
+  </div> 
 
 </body>
+<script src="javascript/turfmap.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="javascript/plot.js"></script>
 <script>selectableForceDirectedGraph();</script>
