@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Pedestrian foot traffic at intersections</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
+    <style>
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    #locations {
+      position: absolute;
+    }
+    </style>
+</head>
+
+<body>
+    <div id='map'></div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoianR2YW5keWsiLCJhIjoiR25GNTN2YyJ9.U90ZHuucvQ3i3RhCCzE2NA'; //Put your Mapbox Public Access token here
+
+    //Load a new map in the 'map' HTML div
+    var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v9',
+            center: [-79.3832, 43.6512],
+            zoom: 5
+        });
+
+    //Load the vector tile source from the Mapbox Pedestrian traffic example
+    map.on('load', function () {
+         map.addLayer({
+            id: 'c',
+            type: 'circle',
+            //Load the vector tile source from our Mapbox Pedestrian traffic example
+            source: {
+                type: 'vector',
+                url: 'jtvandyk.845f1aab' //Your Mapbox tileset Map ID
+            },
+            'source-layer': 'dedup-d3ww6a', //name of tileset
+            paint : {
+                'circle-color' : 'red',
+                'circle-radius' : 10,
+                'circle-opacity' : 0.8
+              }
+        });
+    });
+        </script>
+</body>
+
+</html>

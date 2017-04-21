@@ -51,7 +51,7 @@
 
   .bgimg-4 { 
     /* The image used */
-    background-image: url("https://s3.amazonaws.com/bah-lunch-learn-images/design.jpg");
+    background-image: url("https://s3.amazonaws.com/bah-lunch-learn-images/fail.jpg");
 
     /* Set a specific height */
     min-height: 100%;
@@ -201,6 +201,32 @@
 		width: 100%;
 		height: 100%;
 	}
+
+  /* unvisited link */
+  a:link {
+    color: #777;
+    text-decoration: none;
+  }
+
+  /* visited link */
+  a:visited {
+    color: #444444;
+    text-decoration: none;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: #FF530D;
+    text-decoration: underline;
+  }
+
+/* selected link */
+  a:active {
+    color: #FF530D;
+    text-decoration: underline;
+  s}
+
+
 
   .fa-chevron-down {
     float: left;
