@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>A Leaflet map!</title>
+  <title>Places I've been in DC</title>
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.css' rel='stylesheet' />
   <style>
     body { margin:0; padding:0; }
@@ -20,7 +20,7 @@
   </style>
   <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v1.3.0/turf.min.js'></script>
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js'></script> 
-  <script src='dc_places.js'></script>
+  <script src='javascript/dc_places.js'></script>
   <style>
     #map{ height: 100% }
   </style>
@@ -34,7 +34,7 @@
 
   var bbox = [-77.14702606201172, 38.81005601494022, -76.91994639892578, 39.05];
 
-  var map = L.mapbox.map('map').setView([38.8961302513129,-77.04025268554688,], 13);
+  var map = L.mapbox.map('map').setView([38.8961302513129,-77.04025268554688,], 14);
 
   var grid = turf.hex(bbox, 0.001);
   var grid = turf.count(grid, pts, 'pt_count');
