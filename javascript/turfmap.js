@@ -1,6 +1,15 @@
 var bbox = [-77.14702606201172, 38.81005601494022, -76.91994639892578, 39.05];
 
-  var map = L.mapbox.map('map').setView([38.8961302513129,-77.04025268554688,], 13);
+  var map = L.mapbox.map('map', {
+    zoomControl: false
+  }).setView([38.8961302513129,-77.04025268554688,], 13);
+
+  map.touchZoom.disable();
+  map.doubleClickZoom.disable();
+  map.scrollWheelZoom.disable();
+  map.keyboard.disable();
+
+  if (map.tap) map.tap.disable();
 
   var grid = turf.hex(bbox, 0.001);
   var grid = turf.count(grid, pts, 'pt_count');
@@ -37,7 +46,7 @@ var bbox = [-77.14702606201172, 38.81005601494022, -76.91994639892578, 39.05];
 
   L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
     {
-      attribution: 'Map tiles by <a href="http://cartodb.com/attributions">CartoDB</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL,</a>',
+      attribution: '<a href="">View on full map</a>. Map tiles by <a href="http://cartodb.com/attributions">CartoDB</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL,</a>',
       maxZoom: 17,
       minZoom: 9
     }).addTo(map);
