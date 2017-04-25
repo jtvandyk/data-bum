@@ -17,7 +17,8 @@
 
 	.bgimg-1 {
       background-image: url("https://s3.amazonaws.com/bah-lunch-learn-images/header.png");
-  		min-height: 100%;
+      min-height: 100%;
+
 	}
 
 	.bgimg-2 {
@@ -32,7 +33,7 @@
 
   .bgimg-4 { 
     /* The image used */
-    background-image: url("https://s3.amazonaws.com/bah-lunch-learn-images/fail.jpg");
+    background-image: url("https://s3.amazonaws.com/bah-lunch-learn-images/moonlight.jpg");
 
     /* Set a specific height */
     min-height: 100%;
@@ -48,7 +49,7 @@
 
   .bgimg-6 { 
     /* The image used */
-    background-image: url("https://s3.amazonaws.com/bah-lunch-learn-images/resources.jpg");
+    background-image: url("https://s3.amazonaws.com/bah-lunch-learn-images/t_p_e_full.png");
 
     /* Set a specific height */
     min-height: 100%;
@@ -82,7 +83,7 @@
 	}
 
 	.caption span.border {
-  		background-color: #111;
+  		background-color: #0ba750;
   		color: #fff;
   		padding: 18px;
   		font-size: 25px;
@@ -142,11 +143,11 @@
   		margin: 0;
   		list-style: none;
   
- 		display: -webkit-box;
-  		display: -moz-box;
- 		display: -ms-flexbox;
-  		display: -webkit-flex;
-  		display: flex;
+ 		   display: -webkit-box;
+  		 display: -moz-box;
+ 		   display: -ms-flexbox;
+  	   display: -webkit-flex;
+  		 display: flex;
   
   		-webkit-flex-flow: row wrap;
   		justify-content: space-around;
@@ -162,6 +163,7 @@
   		font-weight: bold;
   		font-size: 3em;
   		text-align: center;
+
 	}
 
 	.flex-viz {
@@ -188,10 +190,33 @@
       text-align: center;
   }
 
+  /* block images */
 	img{
 		width: 100%;
-		height: 100%;
+		max-height: 100%;
+    vertical-align:middle;
 	}
+
+  /* early images - e.g. me and examples */
+  img.shrink {
+    width: 75%;
+    max-height: 100%;
+    vertical-align: middle;
+  }
+
+  /* best practices images */
+  img.presentation {
+    width: 65%;
+    max-height: 100%;
+    vertical-align: middle;
+  }
+
+  /* dear data inspiration image */
+  img.inspiration {
+    width: 95%;
+    max-height: 100%;
+    vertical-align: middle;
+  }
 
   /* unvisited link */
   a:link {
@@ -229,7 +254,7 @@
       -webkit-transition: fill .4s ease;
     }
 
-
+/* dead css */
   .node {
     stroke: #fff;
     stroke-width: 1.5px;
